@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>คู่มือการใช้งานระบบลงทะเบียน - งานศิลปหัตถกรรม ครั้งที่ 74</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <style>
+    body { background-color: #f8fafc; font-family: 'Prompt', sans-serif; color: #334155; line-height: 1.6; }
+    
+    /* Navbar & Hero */
+    .navbar-custom { background: #ffffff; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); border-bottom: 1px solid #e2e8f0; }
+    .navbar-brand-text { background: linear-gradient(135deg, #1e3a8a, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 700; }
+    .hero-bg { background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); color: white; padding: 4rem 0; border-radius: 0 0 40px 40px; margin-bottom: 3rem; box-shadow: 0 10px 30px rgba(37, 99, 235, 0.2); text-align: center; }
+    
+    /* Cards & Components */
+    .manual-card { border: none; border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); background-color: #ffffff; margin-bottom: 2rem; overflow: hidden; }
+    .manual-header { padding: 1.5rem 2rem; border-bottom: 1px solid #e2e8f0; display: flex; align-items: center; }
+    .manual-body { padding: 2rem; }
+    .step-number { width: 36px; height: 36px; background-color: #2563eb; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; flex-shrink: 0; }
+    
+    /* Mockup UI Styles */
+    .mockup-ui { border: 1px solid #cbd5e1; border-radius: 12px; padding: 1.5rem; background-color: #f8fafc; margin-top: 1rem; }
+    .mockup-form { background: white; border-radius: 12px; padding: 1.5rem; border-top: 5px solid #10b981; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+    .mockup-input { border: 1px solid #cbd5e1; border-radius: 8px; padding: 0.5rem 1rem; width: 100%; color: #64748b; background: white; margin-bottom: 0.5rem; display: flex; align-items: center; }
+    .mockup-btn { background: #10b981; color: white; text-align: center; padding: 0.5rem; border-radius: 8px; font-weight: bold; }
+    
+    .text-primary-custom { color: #1e3a8a; }
+    .highlight-box { background-color: #fef3c7; border-left: 4px solid #f59e0b; padding: 1rem; border-radius: 0 8px 8px 0; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-custom py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <i class="bi bi-book-half text-success fs-3 me-2"></i>
+        <span class="fs-4 navbar-brand-text">คู่มือการใช้งานระบบ</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-bg">
+    <div class="container">
+      <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3"><i class="bi bi-star-fill me-1"></i> รอบคัดเลือกตัวแทน</span>
+      <h1 class="display-5 fw-bold mb-3 text-white">ระบบลงทะเบียนการแข่งขัน</h1>
+      <h4 class="fw-light text-white-50">งานศิลปหัตถกรรมนักเรียน ครั้งที่ 74 ระดับกลุ่มโรงเรียนบึงกาฬวิศิษฐ์</h4>
+    </div>
+  </div>
+
+  <div class="container pb-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+
+        <!-- Section 1: เข้าสู่ระบบ -->
+        <div class="card manual-card">
+          <div class="manual-header bg-light">
+            <h4 class="mb-0 text-primary-custom fw-bold"><i class="bi bi-box-arrow-in-right me-2"></i> 1. การเข้าสู่ระบบ (Login)</h4>
+          </div>
+          <div class="manual-body">
+            <p>โรงเรียนสามารถเข้าสู่ระบบเพื่อลงทะเบียน และจัดการข้อมูลผู้เข้าแข่งขันได้ โดยใช้ข้อมูลบัญชีผู้ใช้ ดังนี้:</p>
+            <div class="row align-items-center mt-4">
+              <div class="col-md-6">
+                <div class="d-flex align-items-start mb-3">
+                  <div class="step-number me-3">1</div>
+                  <div><strong>ชื่อผู้ใช้งาน (Username):</strong><br><span class="text-muted">ใช้ รหัสสถานศึกษา 10 หลัก</span></div>
+                </div>
+                <div class="d-flex align-items-start mb-3">
+                  <div class="step-number me-3 bg-warning text-dark">2</div>
+                  <div><strong>รหัสผ่าน (Password):</strong><br><span class="text-muted">ใช้ รหัสสถานศึกษา 10 หลัก (เหมือนกันกับชื่อผู้ใช้งาน)</span></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mockup-ui bg-white shadow-sm text-center border-0 p-4">
+                  <h6 class="text-primary-custom fw-bold mb-3"><i class="bi bi-person-circle"></i> เข้าสู่ระบบ</h6>
+                  <div class="mockup-input"><i class="bi bi-person text-muted me-2"></i> รหัสสถานศึกษา</div>
+                  <div class="mockup-input mb-3"><i class="bi bi-key text-muted me-2"></i> รหัสผ่าน</div>
+                  <div class="bg-primary text-white p-2 rounded-3 fw-bold">เข้าสู่ระบบ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: การลงทะเบียน -->
+        <div class="card manual-card">
+          <div class="manual-header bg-light">
+            <h4 class="mb-0 text-success fw-bold"><i class="bi bi-pencil-square me-2"></i> 2. การลงทะเบียนส่งนักเรียนเข้าแข่งขัน</h4>
+          </div>
+          <div class="manual-body">
+            <p>เมื่อเข้าสู่ระบบสำเร็จ จะพบกับแบบฟอร์มลงทะเบียนทางด้านซ้ายมือ ให้ทำตามขั้นตอนต่อไปนี้:</p>
+            
+            <div class="mockup-form my-4 mx-auto" style="max-width: 500px;">
+              <h6 class="text-success fw-bold"><i class="bi bi-pencil-square"></i> ลงทะเบียนแข่งขัน</h6>
+              <div class="small text-muted mb-1 mt-3">กลุ่มสาระ</div>
+              <div class="mockup-input bg-light">คณิตศาสตร์ <i class="bi bi-chevron-down ms-auto"></i></div>
+              <div class="small text-muted mb-1 mt-2">รายการแข่งขัน</div>
+              <div class="mockup-input bg-light">อัจฉริยภาพทางคณิตศาสตร์ (ป.4-6) <i class="bi bi-chevron-down ms-auto"></i></div>
+              
+              <div class="alert alert-primary bg-primary bg-opacity-10 border-0 py-2 px-3 mt-3 mb-2 rounded-3 small text-primary fw-medium">
+                <i class="bi bi-info-circle-fill"></i> โควตา: นักเรียน 1 คน | ครู 1 คน
+              </div>
+              <div class="mockup-input border-primary border-opacity-50"><i class="bi bi-person-fill text-primary me-2"></i> ชื่อ-สกุล นักเรียนคนที่ 1</div>
+              <div class="mockup-input border-danger border-opacity-50"><i class="bi bi-person-video3 text-danger me-2"></i> ชื่อ-สกุล ครูผู้ฝึกสอน 1</div>
+              <div class="mockup-btn mt-3">บันทึกข้อมูล</div>
+            </div>
+
+            <ol class="mt-4 lh-lg">
+              <li>เลือก <strong>กลุ่มสาระการเรียนรู้</strong> ที่ต้องการ</li>
+              <li>เลือก <strong>รายการแข่งขัน</strong> (ระบบจะแสดงโควตาจำนวนนักเรียนและครูให้ทราบอัตโนมัติ)</li>
+              <li>พิมพ์ <strong>ชื่อ-สกุล</strong> ของนักเรียนและครูผู้ฝึกสอนให้ครบถ้วน (หากไม่มีให้เว้นว่างไว้)</li>
+              <li>กดปุ่ม <strong>"บันทึกข้อมูล"</strong></li>
+            </ol>
+            
+            <div class="highlight-box">
+              <i class="bi bi-shield-exclamation text-warning fs-5 me-2"></i> <strong>ระบบป้องกันการลงข้อมูลซ้ำ (Soft Warning):</strong> 
+              หากโรงเรียนเลือกลงรายการเดิมซ้ำ หรือ พิมพ์ชื่อนักเรียนซ้ำกับที่เคยลงไปแล้ว ระบบจะแจ้งเตือนให้ทราบก่อนบันทึก เพื่อป้องกันความผิดพลาดครับ
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 3: การแก้ไขและการดาวน์โหลดเอกสาร -->
+        <div class="card manual-card">
+          <div class="manual-header bg-light">
+            <h4 class="mb-0 text-info fw-bold"><i class="bi bi-table me-2"></i> 3. การจัดการข้อมูล และดาวน์โหลดใบสมัคร</h4>
+          </div>
+          <div class="manual-body">
+            <p>ตารางด้านขวามือจะแสดงรายการที่โรงเรียนได้ลงทะเบียนไปแล้วทั้งหมด โรงเรียนสามารถดำเนินการได้ดังนี้:</p>
+            
+            <ul class="list-unstyled mt-4 lh-lg">
+              <li class="mb-3">
+                <span class="badge bg-warning text-dark px-3 py-2 rounded-pill me-2"><i class="bi bi-pencil-fill"></i> แก้ไข</span> 
+                คลิกเพื่อดึงข้อมูลกลับมาที่ฟอร์มด้านซ้าย และทำการแก้ไขรายชื่อใหม่ <em>(ทำได้เฉพาะรายการที่กรรมการยังไม่กรอกผลคะแนน)</em>
+              </li>
+              <li class="mb-3">
+                <span class="badge bg-danger px-3 py-2 rounded-pill me-2"><i class="bi bi-trash-fill"></i> ลบ</span> 
+                คลิกเพื่อยกเลิกหรือลบรายการแข่งขันที่ส่งผิดพลาด
+              </li>
+              <li class="mb-3">
+                <span class="badge bg-primary px-3 py-2 rounded-pill me-2"><i class="bi bi-file-word-fill"></i> โหลดใบสมัคร (Word)</span> 
+                กดปุ่มนี้ที่ด้านบนของตาราง เพื่อให้ระบบสร้าง <strong>แบบสรุปรายการลงทะเบียนเข้าแข่งขัน</strong> ของโรงเรียน แยกตามกลุ่มสาระ ออกมาเป็นไฟล์เอกสาร Word ให้นำไปปริ้นเป็นหลักฐานได้ทันที
+              </li>
+              <li class="mb-3">
+                <span class="badge bg-secondary px-3 py-2 rounded-pill me-2"><i class="bi bi-clipboard"></i> คัดลอกตาราง</span> 
+                ก๊อปปี้ข้อมูลในตารางทั้งหมดเพื่อนำไปวางใน Excel แบบรวดเร็ว
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Section 4: โหมดเก็บตก 🔥 (สำคัญ) -->
+        <div class="card manual-card border-danger shadow">
+          <div class="manual-header text-white" style="background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);">
+            <h4 class="mb-0 fw-bold"><i class="bi bi-fire me-2"></i> 4. พิเศษ: โหมดเก็บตก (เปิดระบบ 20 สิงหาคม 2569)</h4>
+          </div>
+          <div class="manual-body bg-danger bg-opacity-10">
+            <p class="fs-5 fw-medium text-danger-emphasis text-center mb-4">
+              ในวันที่ 20 สิงหาคม 2569 เวลา 09.00 น. ระบบจะเปิดให้ลงทะเบียนอีกครั้งในรูปแบบ <br><span class="text-danger fw-bold">"รอบเก็บตก (ใครไวกว่า ได้สิทธิ์นั้นไป!)"</span>
+            </p>
+            
+            <p><strong>กติกาในรอบเก็บตก:</strong></p>
+            <ul>
+              <li>ระบบจะเปิดให้ลงได้ <strong>เฉพาะรายการที่ยังไม่มีโรงเรียนใดส่งเข้าแข่งขันเลยเท่านั้น</strong></li>
+              <li>หากรายการใดมีโรงเรียนลงทะเบียนเข้ามาเพียง 1 โรงเรียน <strong>ระบบจะปิดรับสมัครรายการนั้นทันที</strong></li>
+            </ul>
+
+            <h6 class="fw-bold mt-4 mb-3">หน้าตาของระบบในรอบเก็บตก:</h6>
+            
+            <div class="row align-items-center mb-4">
+              <div class="col-md-6 mb-3">
+                <div class="mockup-input bg-white border-danger shadow-sm">
+                  <div class="text-truncate">
+                    แข่งขันวาดภาพระบายสี (ป.1-3) <span class="text-danger fw-bold ms-1">❌ (เต็มแล้ว)</span>
+                  </div>
+                  <i class="bi bi-chevron-down ms-auto text-muted"></i>
+                </div>
+                <p class="small text-muted mt-2"><i class="bi bi-info-circle"></i> รายการที่มีโรงเรียนอื่นลงทะเบียนไปแล้ว จะถูกล็อคและไม่สามารถกดเลือกได้</p>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="mockup-input bg-white border-success shadow-sm">
+                  <div class="text-truncate">
+                    แข่งขันเดี่ยวขิม (ป.4-6) <span class="text-success fw-bold ms-1">✅ (ว่าง)</span>
+                  </div>
+                  <i class="bi bi-chevron-down ms-auto text-muted"></i>
+                </div>
+                <p class="small text-muted mt-2"><i class="bi bi-info-circle"></i> รายการที่ยังไม่มีใครลงทะเบียน จะสามารถกดเลือกเพื่อกรอกชื่อได้ปกติ</p>
+              </div>
+            </div>
+
+            <div class="alert alert-warning bg-white border-warning shadow-sm border-start border-4">
+              <h6 class="fw-bold text-warning-emphasis mb-2"><i class="bi bi-lightning-charge-fill text-warning"></i> ระบบป้องกันการกดส่งพร้อมกัน (Race Condition)</h6>
+              ในกรณีที่มี 2 โรงเรียนเห็นสถานะ <span class="text-success fw-bold">✅ (ว่าง)</span> พร้อมกัน และกำลังพิมพ์ชื่อแข่งกัน <strong>ระบบจะมอบสิทธิ์ให้กับโรงเรียนที่กดปุ่ม "บันทึกข้อมูล" ได้เสร็จสมบูรณ์เป็นคนแรกเท่านั้น!</strong> 
+              <br><br>โรงเรียนที่กดช้ากว่าจะได้รับข้อความแจ้งเตือนว่า: <br>
+              <em class="text-danger">"ช้าไปนิดเดียวครับ! รายการนี้เพิ่งมีโรงเรียนอื่นกดส่งชื่อตัดหน้าไปเมื่อสักครู่นี้ (สิทธิ์เต็มแล้ว)"</em>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-white border-top py-4 mt-auto text-center">
+    <div class="container">
+      <div class="text-slate-400 small fw-light mb-1">
+        <i class="bi bi-code-slash me-1 text-primary"></i> จัดทำคู่มือโดย งานประกันคุณภาพและมาตรฐานการศึกษา โรงเรียนบ้านบึงกาฬ
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
